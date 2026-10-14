@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Krishna | My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            color: #172554;
+        }
+
+        /* Navigation */
+        header {
+            background: #14213d;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #00c9e8;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00c9e8;
+        }
+
+        /* Home */
+        .hero {
+            min-height: 400px;
+            background: linear-gradient(120deg, #12304f, #0077b6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: #00d4ff;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00bcd4;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0097a7;
+            transform: translateY(-3px);
+        }
+
+        /* Common sections */
+        section {
+            padding: 65px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #14213d;
+        }
+
+        section p {
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* Skills and Projects */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card h3 {
+            color: #0077b6;
+            margin-bottom: 14px;
+        }
+
+        .card p {
+            font-size: 15px;
+        }
+
+        /* Contact */
+        #contact {
+            background: #e8f2fb;
+        }
+
+        .contact-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .contact-links a {
+            color: #0077b6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #14213d;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        /* Mobile layout */
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+                padding: 20px 5%;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+
+            nav a {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Sai Krishna</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h1>Hello, I'm <span>Sai Krishna!</span></h1>
+            <p>B.Tech Student | Aspiring Software Developer</p>
+            <a href="#projects" class="btn">View My Projects</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Sai Krishna, a B.Tech student passionate about
+                technology, programming, and web development. I enjoy
+                learning new skills and building creative projects that
+                solve real-world problems.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Creating structured and accessible web pages.</p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Designing responsive and attractive websites.</p>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Adding interactive features to websites.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Python</h3>
+                    <p>Learning programming and problem-solving.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Personal Portfolio</h3>
+                    <p>A website showcasing my skills and projects.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Product Prototype</h3>
+                    <p>A demonstration of the Prototype Design Pattern.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Student Management System</h3>
+                    <p>A sample application for managing student records.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>I'm interested in learning, collaborating, and working
+               on new projects.</p>
+
+            <div class="contact-links">
+                <!-- Replace these example details with your own -->
+                <a href="mailto:your-email@example.com">Email Me</a>
+                <a href="https://github.com/yourusername"
+                   target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/yourusername"
+                   target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sai Krishna | My Portfolio</p>
+    </footer>
+
+</body>
+</html>
